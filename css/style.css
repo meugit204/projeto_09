@@ -47,7 +47,7 @@ header {
     float: left;
     width: 166px;
     height: 64px;
-    background-image: url('imagens/logo.png');
+    background-image: url(../imagens/logo.png);
     background-size: 100% 100%;
 }
 
@@ -70,9 +70,11 @@ header nav ul li>a {
     color: #fff;
     text-decoration: none;
 }
-header nav ul li>a:hover{
+
+header nav ul li>a:hover {
     color: #509d87;
 }
+
 li.selected {
     color: #509d87;
     position: relative;
@@ -89,7 +91,7 @@ li.selected>span {
 .telefone-header {
     float: right;
     position: relative;
-    top: -30px;
+    top: -10px;
 }
 
 .telefone-header span {
