@@ -1,4 +1,5 @@
 /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* reset */
 * {
@@ -10,4 +11,89 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* classes auxiliares */
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/* site */
+
+/* sessao 01 */
+section.header-master {
+    width: 100%;
+    min-height: 700px;
+    padding: 30px 0;
+    background-image: url(/imagens/bg_01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(71, 83, 88, 0.2);
+}
+
+.logo {
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url('/imagens/logo.png');
+    background-size: 100% 100%;
+}
+
+header nav {
+    float: left;
+    padding-left: 60px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+header nav ul li>a {
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li>a:hover{
+    color: #509d87;
+}
+li.selected {
+    color: #509d87;
+    position: relative;
+}
+
+li.selected>span {
+    position: absolute;
+    bottom: 0;
+    width: 17px;
+    height: 3px;
+    background-color: #509d87;
+}
+
+.telefone-header {
+    float: right;
+    position: relative;
+    top: -30px;
+}
+
+.telefone-header span {
+    font-size: 27px;
+    color: #fff;
+    padding-left: 30px;
 }

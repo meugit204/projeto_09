@@ -10,11 +10,34 @@
 </head>
 
 <body>
+    <section class="header-master">
+        <header>
+            <div class="container">
+                <div class="logo"> </div><!--logo-->
+                <nav>
+                    <ul>
+                        <li class="selected"><span></span><a href="">invisaling</a></li>
+                        <li><span></span><a href="">beneficios</a></li>
+                        <li><span></span><a href="">serve para mim?</a></li>
+                        <li><span></span><a href="">contato</a></li>
+                    </ul>
+                </nav>
+                <div class="telefone-header">
+                    <span>(48) 3222-6591</span>
+                </div> <!-- telefone -->
+                <div class="clear"></div>
+        </header>
+    </section> <!--header-master -->
 
-
-    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- script -->
-    <script src="js/"></script>
+    <script>
+        $('nav a').hover(function () {
+            $('nav li').removeClass('selected');
+            $(this).parent().addClass('selected');
+        });
+    </script>
 </body>
 
 </html>
